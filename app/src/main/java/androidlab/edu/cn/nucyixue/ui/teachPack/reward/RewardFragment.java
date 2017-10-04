@@ -13,13 +13,11 @@ import androidlab.edu.cn.nucyixue.R;
 import androidlab.edu.cn.nucyixue.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class RewardFragment extends BaseFragment {
-
 
     @BindView(R.id.xuanshang_recyclerview)
     RecyclerView mXuanshangRecyclerview;

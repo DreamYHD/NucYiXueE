@@ -46,7 +46,9 @@ dependencies {
     compile('cn.leancloud.android:avoscloud-push:v4.4.3@aar') { transitive = true }
     // 推送与实时聊天需要的包
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile project(':leancloudchatkit')
+    //compile project(':leancloudchatkit')
+    compile ('cn.leancloud.android:chatkit:1.0.6')
+
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:26.0.0-alpha1'

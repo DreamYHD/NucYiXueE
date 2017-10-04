@@ -39,6 +39,7 @@ import androidlab.edu.cn.nucyixue.R;
 import androidlab.edu.cn.nucyixue.base.BaseActivity;
 import androidlab.edu.cn.nucyixue.base.BaseRecyclerAdapter;
 import androidlab.edu.cn.nucyixue.ui.common.camera.CameraActivity;
+import androidlab.edu.cn.nucyixue.ui.common.view.BigImageDialog;
 import androidlab.edu.cn.nucyixue.utils.FileUtils;
 import androidlab.edu.cn.nucyixue.utils.FlexTextUtil;
 import butterknife.BindView;
@@ -86,6 +87,7 @@ public class XuanshangSendActivity extends BaseActivity {
         mXunshangSendImageAdapter.setOnClickerListener(new BaseRecyclerAdapter.OnClickerListener() {
             @Override
             public void click(View mView, int position) {
+                BigImageDialog m
 
             }
         });
@@ -188,6 +190,9 @@ public class XuanshangSendActivity extends BaseActivity {
                         //街道信息
                         mXuanshangSendLocationText.setText(amapLocation.getStreet());
                     }
+                }else {
+                    Log.e(TAG, "onLocationChanged: "+amapLocation.getErrorInfo());
+
                 }
             }
         });
